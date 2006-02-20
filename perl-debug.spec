@@ -1,10 +1,12 @@
+#
 # Conditional build:
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests		# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	debug
 Summary:	Perl pragma for debugging and logging of debug lines
+Summary(pl):	Pakiet Perla do ¶ledzenia i logowania linii diagnostycznych
 Name:		perl-debug
 Version:	0.03
 Release:	0.1
@@ -13,6 +15,7 @@ License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org//CPAN/authors/id/S/ST/STEVAN/debug-%{version}.tar.gz
 # Source0-md5:	2648f7e792445ba4b6bc42a56924a708
+URL:		http://search.cpan.org/dist/debug/
 %if %{with tests}
 BuildRequires:	perl-Test-Pod >= 1.14
 BuildRequires:	perl-Test-Pod-Coverage >= 1.04
@@ -24,6 +27,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The debug pragma provides a very simple way of turning on and off your
 debugging lines, as well as a very flexible way of logging those lines
 to literally anywhere you want.
+
+%description -l pl
+Pakiet debug udostêpnia bardzo prosty sposób w³±czania i wy³±czania
+linii diagnostycznych, a tak¿e bardzo elastyczny sposób logowania tych
+linii dos³ownie wszêdzie, gdzie chcemy.
 
 %prep
 %setup -q -n %{pdir}-%{version}
