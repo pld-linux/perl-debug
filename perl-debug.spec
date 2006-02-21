@@ -13,7 +13,7 @@ Release:	0.1
 # same as perl
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org//CPAN/authors/id/S/ST/STEVAN/debug-%{version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/S/ST/STEVAN/debug-%{version}.tar.gz
 # Source0-md5:	2648f7e792445ba4b6bc42a56924a708
 URL:		http://search.cpan.org/dist/debug/
 %if %{with tests}
