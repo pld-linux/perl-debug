@@ -6,7 +6,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	debug
 Summary:	Perl pragma for debugging and logging of debug lines
-Summary(pl):	Pakiet Perla do ¶ledzenia i logowania linii diagnostycznych
+Summary(pl.UTF-8):   Pakiet Perla do Å›ledzenia i logowania linii diagnostycznych
 Name:		perl-debug
 Version:	0.03
 Release:	0.1
@@ -28,10 +28,10 @@ The debug pragma provides a very simple way of turning on and off your
 debugging lines, as well as a very flexible way of logging those lines
 to literally anywhere you want.
 
-%description -l pl
-Pakiet debug udostêpnia bardzo prosty sposób w³±czania i wy³±czania
-linii diagnostycznych, a tak¿e bardzo elastyczny sposób logowania tych
-linii dos³ownie wszêdzie, gdzie chcemy.
+%description -l pl.UTF-8
+Pakiet debug udostÄ™pnia bardzo prosty sposÃ³b wÅ‚Ä…czania i wyÅ‚Ä…czania
+linii diagnostycznych, a takÅ¼e bardzo elastyczny sposÃ³b logowania tych
+linii dosÅ‚ownie wszÄ™dzie, gdzie chcemy.
 
 %prep
 %setup -q -n %{pdir}-%{version}
