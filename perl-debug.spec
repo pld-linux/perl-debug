@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	debug
 Summary:	Perl pragma for debugging and logging of debug lines
 Summary(pl.UTF-8):	Pakiet Perla do śledzenia i logowania linii diagnostycznych
